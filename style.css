@@ -1,0 +1,34 @@
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  animation: wobble 2s infinite ease-in-out; /* wobble effect */
+}
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
+  50% { text-shadow: 0 0 15px #00eaff, 0 0 25px #00eaff; }
+  100% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  animation: wobble 2s infinite ease-in-out, glow 3s infinite alternate;
+}
